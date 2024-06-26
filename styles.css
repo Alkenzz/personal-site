@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #ffcc33, #ff66ff);
+    color: #333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff66ff;
+}
+
+main {
+    padding-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 2s ease-out;
+    max-width: 600px;
+    width: 90%;
+    margin: 1rem;
+}
+
+.card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    animation: fadeInDown 1s ease-out;
+}
+
+.card h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    animation: fadeInDown 1.2s ease-out;
+}
+
+.card p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    animation: fadeInDown 1.5s ease-out;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    animation: fadeInUp 2s ease-out;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff66ff;
+}
+
+.video-container {
+    margin-top: 1.5rem;
+    animation: fadeInUp 2.5s ease-out;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    margin-top: auto;
+    padding: 1rem 0;
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
